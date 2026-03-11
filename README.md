@@ -35,6 +35,8 @@ Zalety projektu:
 *  program napisany pod typowe środowisko korporacyjne z zalogowanym "Outlookiem"
 *  program dedykowany SAP ARIBA (z  racji, że pracuję na tym programie jako key user) ale można go szybko dopasować do innych systemów - wystarczy przeanalizować raporty generowane np. przez SAP MM, czy inny dowolny program
   .
+Przykładowe fragmenty kodu oraz screen z maila i raportów.
+
 
 
 Tabela z zamówieniami (na żółto te zamówienia, gdzie Mobi powienien wysłać przypominajkę):
@@ -50,10 +52,10 @@ Email administratora:
 <img width="776" height="496" alt="image" src="https://github.com/user-attachments/assets/cfa1b47f-89cf-49aa-a0c5-0e09831deb8c" />
 
 Statystyki z załącznika:
+
 <img width="577" height="391" alt="image" src="https://github.com/user-attachments/assets/50778feb-eb99-49d1-9fcf-39030664d346" />
 
 
 
 
 
-Przykładowe fragmenty kodu oraz screen z maila i raportów.
