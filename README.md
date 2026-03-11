@@ -8,6 +8,8 @@ Projekt: Program 'Mobi' do automatyzacji maili
 
 Źródło: sama wygenerowałam próbkę danych na potrzeby spr. automatyzacji
 
+Kod: cały kod znajduje się w osobnym pliku
+
 Cel: Stworzenie programu do analizy tabeli excel z danymi o zamówieniach w systemie SAP ARIBA oraz automatycznego wysyłania maili do kupców z przypomnieniem. Program generuje też raport dla administratora, do kogo maile zostały wysłane i jakie są statystyki zamówień. Dzięki temu można jednym kliknięciem zaoszczędzić sporo FTE, a administrator może szybko uzyskać realny "stan rzeczy".
 
 
@@ -31,7 +33,8 @@ Zalety projektu:
 *  administrator programu otrzymuje statystyki, dzięki czemu łatwiej kontrolować proces GR
 *  program automatyzuje pracę w obrębie działu zakupów
 *  program napisany pod typowe środowisko korporacyjne z zalogowanym "Outlookiem"
-*  program dedykowany SAP ARIBA (z  racji, że pracuję na tym programie jako key user) ale można go szybko dopasować do innych systemów - wystarczy przeanalizować raporty generowane np. przez SAP MM, czy inny dowolny program.
+*  program dedykowany SAP ARIBA (z  racji, że pracuję na tym programie jako key user) ale można go szybko dopasować do innych systemów - wystarczy przeanalizować raporty generowane np. przez SAP MM, czy inny dowolny program
+  .
 
 
 Tabela z zamówieniami (na żółto te zamówienia, gdzie Mobi powienien wysłać przypominajkę):
@@ -51,6 +54,6 @@ Statystyki z załącznika:
 
 
 
-Kod: cały kod znajduje się w osobnym pliku
+
 
 Przykładowe fragmenty kodu oraz screen z maila i raportów.
