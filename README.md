@@ -1,5 +1,6 @@
 # Mobi---PTP
 Program automatyzuje pracę w obszarze operacyjnym działu PTP
+
 Autor: Kamila Dudzińska
 
 Projekt: Program 'Mobi' do automatyzacji maili 
