@@ -25,13 +25,13 @@ Jak działa program:
    
 
 Zalety projektu:
-* odpowiada na realny problem w wielu procesach operacyjnych, gdzie wymagane jest sprawdzanie i repetetywne wysyłanie przypominajek/follow-upów
-* zmniejsza problem z tworzeniem przyjęcia GR przez nietechnicznych kupców, którzy często nie pilnują swoich zamówień tłumacząc to jako - "W Aribie Guided Buing nie da się filtrować po statusach". 
-* dzięki monitorowaniu stanu zamówień (PO) i przyjęć (GR) można zmniejszyć "invoice overdue" (niepłacenie faktur na czas) a co za tym idzie - zminimalizować ryzyko kłopotów z dostawcami, czy utraty wizerunku
-* administrator programu otrzymuje statystyki, dzięki czemu łatwiej kontrolować proces GR
-* program automatyzuje pracę w obrębie działu zakupów
-* program napisany pod typowe środowisko korporacyjne z zalogowanym "Outlookiem"
-* program dedykowany SAP ARIBA (z  racji, że pracuję na tym programie jako key user) ale można go szybko dopasować do innych systemów - wystarczy przeanalizować raporty generowane np. przez SAP MM, czy inny dowolny program.
+*  odpowiada na realny problem w wielu procesach operacyjnych, gdzie wymagane jest sprawdzanie i repetetywne wysyłanie przypominajek/follow-upów
+*  zmniejsza problem z tworzeniem przyjęcia GR przez nietechnicznych kupców, którzy często nie pilnują swoich zamówień tłumacząc to jako - "W Aribie Guided Buing nie da się filtrować po statusach". 
+*  dzięki monitorowaniu stanu zamówień (PO) i przyjęć (GR) można zmniejszyć "invoice overdue" (niepłacenie faktur na czas) a co za tym idzie - zminimalizować ryzyko kłopotów z dostawcami, czy utraty wizerunku
+*  administrator programu otrzymuje statystyki, dzięki czemu łatwiej kontrolować proces GR
+*  program automatyzuje pracę w obrębie działu zakupów
+*  program napisany pod typowe środowisko korporacyjne z zalogowanym "Outlookiem"
+*  program dedykowany SAP ARIBA (z  racji, że pracuję na tym programie jako key user) ale można go szybko dopasować do innych systemów - wystarczy przeanalizować raporty generowane np. przez SAP MM, czy inny dowolny program.
 
 
 Tabela z zamówieniami (na żółto te zamówienia, gdzie Mobi powienien wysłać przypominajkę):
