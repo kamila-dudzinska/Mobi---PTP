@@ -75,7 +75,7 @@ outlook =  win32com.client.Dispatch("Outlook.Application")
 for index, row in df.iterrows():
     
     status = row['Status']
-    supplier_email = row['Mail']
+    mail = row['Mail']
     name = row['Name']
     po_number = row['PO Number']
     delivery_date = row['Delivery date']
@@ -98,7 +98,7 @@ for index, row in df.iterrows():
         
         # tworzenie maila
         mail = outlook.CreateItem(0)
-        mail.To = supplier_email
+        mail.To = mail
         mail.Subject = subject
         mail.Body = body
         emails_sent += 1
@@ -106,7 +106,7 @@ for index, row in df.iterrows():
         #wysyłanie maila
         mail.Send()
         
-        print(f'Email sent to {supplier_email}')
+        print(f'Email sent to {mail}')
         
     elif status == "Received":
         
