@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Mar 11 23:40:59 2026
-@author: lila_
+@author: Kamila Dudzińska
 """
 
 #import modułów
