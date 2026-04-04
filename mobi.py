@@ -2,6 +2,11 @@
 """
 Created on Wed Mar 11 23:40:59 2026
 @author: Kamila Dudzińska
+
+''' Program przechodzi przez plik excel, sprawdza status PO - jeśli jest 'ordered' ale delivery date jest w przeszłości, to wysyła maila do użytkownika, aby wyjasnił kwestię z kupcem. W procuremencie, aby faktura była 
+zaksięgowana musi być spełniony 3 way match, czyli zamówienie = przyjęcie = faktura. Gdy brakuje przyjęcia (GR) faktura nie może zostać zapłacona, Program  dodatkowo oblicza statystyki i wysyła maila do administratora 
+orazdodaje załącznik w formacie pdf. Poprzez automatyzację wysyłki maili do kupców - program rozwiązuje realny problem biznesowy często spotykany w dużych centrach usług wspólnych.
+
 """
 
 #import modułów
