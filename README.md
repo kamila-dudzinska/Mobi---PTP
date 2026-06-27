@@ -63,7 +63,7 @@ pip install pandas reportlab pywin32
 ![main](mobi2.png)
 
 ### Email administratora:
-<img width="776" height="496" alt="image" src="https://github.com/user-attachments/assets/cfa1b47f-89cf-49aa-a0c5-0e09831deb8c" />
+![Email to Admin](admin_email.png)
 
 <hr style="border:3px solid #AEC6CF;">
 ### 📧 Kontakt
