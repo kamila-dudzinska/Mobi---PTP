@@ -1,0 +1,48 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# --- Virtual environments ---
+venv/
+env/
+.venv/
+
+# --- System files ---
+.DS_Store
+Thumbs.db
+
+# --- IDE / Editors ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Jupyter / Spyder ---
+.ipynb_checkpoints/
+.spyproject/
+
+# --- Build / Dist ---
+build/
+dist/
+*.spec
+
+# --- Reports / Generated files ---
+*.pdf
+*.xlsx
+*.xls
+*.csv
+
+# --- Local config / secrets ---
+.env
+config.ini
+settings.ini
+
+# --- Temporary files ---
+*.tmp
+*.bak
+*.swp
