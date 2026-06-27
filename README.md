@@ -1,25 +1,31 @@
 # Mobi---PTP 🚀
+<hr style="border:1px solid #ADD8E6;">
 Program automatyzuje pracę w obszarze operacyjnym działu PTP
 
 ## Autor: Kamila Dudzińska
 
 ## Projekt: Program 'Mobi' do automatyzacji maili 
+<hr style="border:1px solid #ADD8E6;">
 Mobi jest dedykowany dla procesów operacyjnych dla działu zakupów (Indirect Procurement).
 
 ## 📂 Źródło: Procurement_mock_dataset1 
+<hr style="border:1px solid #ADD8E6;">
 Mockowy zestaw danych, który odzwierciedla dokładną architekturę techniczną, inżynierię danych oraz logikę biznesową systemu SAP Ariba. Zestaw danych został wygenerowany przez skrypt mojego autorastwa - dostępny na moim Githubie pod nazwą " SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics". Zawiera 2500 rekordów. --> [SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics \](https://github.com/kamila-dudzinska/SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics)
 
 " SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics" - Generator Danych Mockowych SAP Ariba dla Analityki Zakupowej (Procurement) 📊🧪 --> Narzędzie w Pythonie zaprojektowane do generowania syntetycznych, produkcyjnej jakości zestawów danych zamówień zakupu (Purchase Orders). Odzwierciedla ono dokładną architekturę techniczną, inżynierię danych oraz logikę biznesową systemu SAP Ariba. Ten projekt rozwiązuje kluczowy problem ekspertów ds. zakupów (Procurement), którzy chcą przejść do obszaru analizy danych: brak możliwości pracy na realnych danych korporacyjnych ze względu na surowe zasady compliance, umowy NDA oraz regulacje RODO.
 
 ## 🎯Cel: 
+<hr style="border:1px solid #ADD8E6;">
 Stworzenie programu do analizy tabeli excel z danymi o zamówieniach w systemie SAP ARIBA oraz automatycznego wysyłania maili do kupców z przypomnieniem o konieczności zaksięgowania przyjęcia (GR). Program generuje też raport dla administratora, do kogo maile zostały wysłane i jakie są statystyki zamówień. Dzięki temu można jednym kliknięciem zaoszczędzić sporo FTE, a administrator może szybko uzyskać realny "stan rzeczy".
 
 ## ⚙️ Technologie:
+<hr style="border:1px solid #ADD8E6;">
 - Python 🐍  
 - pandas, reportlab, win32com  
 - Excel, Outlook
 
 ## 🧩 Jak działa program
+<hr style="border:1px solid #ADD8E6;">
 1. Program iteruje wiersz po wierszu w tabeli za zamówieniami. 
 2.Jeśli znajdzie zamówienie (PO) ze statusem "ordered" ("zamówione") to sprawdzi dodatkowo prognozowaną datę dostawy(delivery date).
 3. Jeżeli data dostawy jest w przeszłości (dzisiaj odjąć 3 dni*) to potraktuje to jako informację do wykonania zadania --> wyśle maila z przypomnieniem o zrobieniu GR do kupca.
@@ -28,6 +34,7 @@ Stworzenie programu do analizy tabeli excel z danymi o zamówieniach w systemie 
 
 
 ## Zalety projektu:
+<hr style="border:1px solid #ADD8E6;">
 *  odpowiada na realny problem w wielu procesach operacyjnych, gdzie wymagane jest sprawdzanie i repetetywne wysyłanie przypominajek/follow-upów
 *  zmniejsza problem z tworzeniem przyjęcia GR przez nietechnicznych kupców, którzy często nie pilnują swoich zamówień tłumacząc to jako - "W Aribie Guided Buing nie da się filtrować po statusach". 
 *  dzięki monitorowaniu stanu zamówień (PO) i przyjęć (GR) można zmniejszyć "invoice overdue" (niepłacenie faktur na czas) a co za tym idzie - zminimalizować ryzyko kłopotów z dostawcami, czy utraty wizerunku
@@ -39,7 +46,7 @@ Stworzenie programu do analizy tabeli excel z danymi o zamówieniach w systemie 
 Kod dostępny w pliky mobi,py
 
 ## ⚙️ Instalacja i uruchomienie
-
+<hr style="border:1px solid #ADD8E6;">
 ### 🔧 Wymagania
 - Python 3.10+  
 - Zainstalowany Outlook (dla wysyłki maili) oraz opcjonalnie Excel do odczytu csv
@@ -49,7 +56,7 @@ Kod dostępny w pliky mobi,py
 W katalogu projektu uruchom:
 ```bash
 pip install pandas reportlab pywin32
-'''''
+```
 
 ###Tabela z zamówieniami (na niebiesko te zamówienia, gdzie Mobi powienien wysłać przypominajkę):
 ![tabelka excel](ordered1.py)
@@ -67,6 +74,7 @@ pip install pandas reportlab pywin32
 <img width="577" height="391" alt="image" src="https://github.com/user-attachments/assets/50778feb-eb99-49d1-9fcf-39030664d346" />
 
 ## 📬 Kontakt
+<hr style="border:1px solid #ADD8E6;">
 📧 kamila.dudzinska@onet.pl  
 🌐 [LinkedIn]([ca://s?q=Otworz_profil_LinkedIn_Kamila_Dudzinska](https://www.linkedin.com/flagship-web/in/kamila-dudzi%C5%84ska-856bb31b8/))
 
