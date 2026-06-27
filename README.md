@@ -57,7 +57,7 @@ pip install pandas reportlab pywin32
 ![tabelka excel](ordered1.py)
 
 ### Fragment kodu: Czyszczenie danych
-![data cleaning](mobi1a.png)
+![data cleaning](mobi1.png)
 
 ### Fragment kodu: main loop
 ![main](mobi2.png)
