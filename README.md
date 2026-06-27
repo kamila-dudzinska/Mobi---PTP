@@ -1,5 +1,4 @@
 # Mobi---PTP 🚀
-<hr style="border:1px solid #BFEFFF;">
 Program automatyzuje pracę w obszarze operacyjnym działu PTP
 
 ### Autor: Kamila Dudzińska
@@ -8,7 +7,6 @@ Program automatyzuje pracę w obszarze operacyjnym działu PTP
 Mobi jest dedykowany dla procesów operacyjnych dla działu zakupów (Indirect Procurement).
 
 ### 📂 Źródło: Procurement_mock_dataset1 
-<hr style="border:1px solid #ADD8E6;">
 Mockowy zestaw danych, który odzwierciedla dokładną architekturę techniczną, inżynierię danych oraz logikę biznesową systemu SAP Ariba. Zestaw danych został wygenerowany przez skrypt mojego autorastwa - dostępny na moim Githubie pod nazwą " SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics". Zawiera 2500 rekordów. --> [SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics \](https://github.com/kamila-dudzinska/SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics)
 
 " SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics" - Generator Danych Mockowych SAP Ariba dla Analityki Zakupowej (Procurement) 📊🧪 --> Narzędzie w Pythonie zaprojektowane do generowania syntetycznych, produkcyjnej jakości zestawów danych zamówień zakupu (Purchase Orders). Odzwierciedla ono dokładną architekturę techniczną, inżynierię danych oraz logikę biznesową systemu SAP Ariba. Ten projekt rozwiązuje kluczowy problem ekspertów ds. zakupów (Procurement), którzy chcą przejść do obszaru analizy danych: brak możliwości pracy na realnych danych korporacyjnych ze względu na surowe zasady compliance, umowy NDA oraz regulacje RODO.
@@ -40,9 +38,10 @@ Stworzenie programu do analizy tabeli excel z danymi o zamówieniach w systemie 
   .
 Kod dostępny w pliky mobi,py
 
-### ⚙️ Instalacja i uruchomienie
 <hr style="border:1px solid #BFEFFF;">
-#### 🔧 Wymagania
+
+### ⚙️ Instalacja i uruchomienie
+####  🔧 Wymagania
 - Python 3.10+  
 - Zainstalowany Outlook (dla wysyłki maili) oraz opcjonalnie Excel do odczytu csv
 - Biblioteki: `pandas`, `reportlab`, `win32com`, `os`, `datetime`
