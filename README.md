@@ -3,7 +3,8 @@ Program automatyzuje pracę w obszarze operacyjnym działu PTP
 
 ## Autor: Kamila Dudzińska
 
-## Projekt: Program 'Mobi' do automatyzacji maili dedykowany dla procesów operacyjnych dla działu zakupów (Procurement)
+## Projekt: Program 'Mobi' do automatyzacji maili 
+Mobi jest dedykowany dla procesów operacyjnych dla działu zakupów (Indirect Procurement).
 
 ## 📂 Źródło: Procurement_mock_dataset1 
 Mockowy zestaw danych, który odzwierciedla dokładną architekturę techniczną, inżynierię danych oraz logikę biznesową systemu SAP Ariba. Zestaw danych został wygenerowany przez skrypt mojego autorastwa - dostępny na moim Githubie pod nazwą " SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics". Zawiera 2500 rekordów. --> [SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics \](https://github.com/kamila-dudzinska/SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics)
