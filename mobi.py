@@ -32,7 +32,7 @@ from mobi_function import divide_z
 
 
 # LOAD DATA II
-file_path = "./mobi_ptp/procurement_mock_2500.csv"
+file_path = "./data/procurement_mock_2500.csv"
 df = pd.read_csv(file_path)
 
 # DATA CLEANING - PREPROCESSING
