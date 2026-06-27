@@ -64,11 +64,13 @@ pip install pandas reportlab pywin32
 ### Email administratora:
 <img width="776" height="496" alt="image" src="https://github.com/user-attachments/assets/cfa1b47f-89cf-49aa-a0c5-0e09831deb8c" />
 
+<hr style="border:2px solid #AEC6CF;">
 ### 📧 Kontakt
-<hr style="border:1px solid #AEC6CF;">
+Kamila Dudzińska
+
 📧 kamila.dudzinska@onet.pl  
 
-🌐 [LinkedIn](https://www.linkedin.com/flagship-web/in/kamila-dudzi%C5%84ska-856bb31b8/))
+🌐 [LinkedIn](https://www.linkedin.com/flagship-web/in/kamila-dudzi%C5%84ska-856bb31b8/)
 
 
 
