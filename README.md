@@ -49,22 +49,21 @@ Kod dostępny w pliky mobi,py
 W katalogu projektu uruchom:
 ```bash
 pip install pandas reportlab pywin32
+'''''
 
-
-Tabela z zamówieniami (na niebiesko te zamówienia, gdzie Mobi powienien wysłać przypominajkę):
+###Tabela z zamówieniami (na niebiesko te zamówienia, gdzie Mobi powienien wysłać przypominajkę):
 ![tabelka excel](ordered1.py)
 
-Fragment kodu: Czyszczenie danych
-<img width="763" height="275" alt="czyszczenie" src="https://github.com/user-attachments/assets/89331507-b596-449a-b70c-d637b55a88f2" />
+###Fragment kodu: Czyszczenie danych
+![data cleaning](mobi1a.png)
 
-Fragment kody: połączenie z outlookiem, pętla oraz instrukcje warunkowe:
-<img width="887" height="810" alt="image" src="https://github.com/user-attachments/assets/e8838fd7-9582-40da-a8f9-a573813e21a5" />
+###Fragment kodu: main loop
+![main](mobi2.png)
 
-Email administratora:
+###Email administratora:
 <img width="776" height="496" alt="image" src="https://github.com/user-attachments/assets/cfa1b47f-89cf-49aa-a0c5-0e09831deb8c" />
 
-Statystyki z załącznika:
-
+###Statystyki z załącznika:
 <img width="577" height="391" alt="image" src="https://github.com/user-attachments/assets/50778feb-eb99-49d1-9fcf-39030664d346" />
 
 ## 📬 Kontakt
