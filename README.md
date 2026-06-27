@@ -4,13 +4,22 @@ Program automatyzuje pracę w obszarze operacyjnym działu PTP
 Autor: Kamila Dudzińska
 
 Projekt: Program 'Mobi' do automatyzacji maili 
-	 dedykowany dla procesów operacyjnych dla działu zakupów (Procurement)
+	     dedykowany dla procesów operacyjnych dla działu zakupów (Procurement)
 
-Źródło: sama wygenerowałam próbkę danych na potrzeby spr. automatyzacji
+Źródło: Procurement_mock_dataset1 - mockowy zestaw danych, który odzwierciedla dokładną architekturę techniczną, inżynierię danych oraz logikę biznesową systemu SAP Ariba.
+Zestaw danych został wygenerowany przez skrypt mojego autorastwa - dostępny na moim Githubie pod nazwą " SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics". Zawiera 2500 rekordów, w tym puste wartości oraz wartości odstające(outliers)*.
 
-Kod: cały kod znajduje się w osobnym pliku
+" SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics" - Generator Danych Mockowych SAP Ariba dla Analityki Zakupowej (Procurement) 📊🧪
 
-Cel: Stworzenie programu do analizy tabeli excel z danymi o zamówieniach w systemie SAP ARIBA oraz automatycznego wysyłania maili do kupców z przypomnieniem. Program generuje też raport dla administratora, do kogo maile zostały wysłane i jakie są statystyki zamówień. Dzięki temu można jednym kliknięciem zaoszczędzić sporo FTE, a administrator może szybko uzyskać realny "stan rzeczy".
+🚀 Narzędzie w Pythonie zaprojektowane do generowania syntetycznych, produkcyjnej jakości zestawów danych zamówień zakupu (Purchase Orders). Odzwierciedla ono dokładną architekturę techniczną, inżynierię danych oraz logikę biznesową systemu SAP Ariba.
+
+💡 Ten projekt rozwiązuje kluczowy problem ekspertów ds. zakupów (Procurement), którzy chcą przejść do obszaru analizy danych: brak możliwości pracy na realnych danych korporacyjnych ze względu na surowe zasady compliance, umowy NDA oraz regulacje RODO.
+
+🛠️ Dzięki temu skryptowi, eksperci domenowi i analitycy danych mogą błyskawicznie stworzyć w 100% zgodne z przepisami, bezpieczne i realistyczne środowisko testowe do praktyki czyszczenia, eksploracji i wizualizacji danych.
+
+Kod: cały kod znajduje się w osobnym pliku py
+
+Cel: Stworzenie programu do analizy tabeli excel z danymi o zamówieniach w systemie SAP ARIBA oraz automatycznego wysyłania maili do kupców z przypomnieniem o konieczności zaksięgowania przyjęcia (GR). Program generuje też raport dla administratora, do kogo maile zostały wysłane i jakie są statystyki zamówień. Dzięki temu można jednym kliknięciem zaoszczędzić sporo FTE, a administrator może szybko uzyskać realny "stan rzeczy".
 
 
 Jak działa program:
@@ -39,8 +48,8 @@ Przykładowe fragmenty kodu oraz screen z maila i raportów.
 
 
 
-Tabela z zamówieniami (na żółto te zamówienia, gdzie Mobi powienien wysłać przypominajkę):
-<img width="1508" height="198" alt="image" src="https://github.com/user-attachments/assets/271c8ce8-e929-41fd-82a0-b3b7079140cf" />
+Tabela z zamówieniami (na niebiesko te zamówienia, gdzie Mobi powienien wysłać przypominajkę):
+![tabelka excel](ordered1.py)
 
 Fragment kodu: Czyszczenie danych
 <img width="763" height="275" alt="czyszczenie" src="https://github.com/user-attachments/assets/89331507-b596-449a-b70c-d637b55a88f2" />
