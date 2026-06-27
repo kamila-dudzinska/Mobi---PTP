@@ -3,17 +3,17 @@ Program automatyzuje pracę w obszarze operacyjnym działu PTP
 
 ## Autor: Kamila Dudzińska
 
-## Projekt: Program 'Mobi' do automatyzacji maili 
-	     dedykowany dla procesów operacyjnych dla działu zakupów (Procurement)
+## Projekt: Program 'Mobi' do automatyzacji maili dedykowany dla procesów operacyjnych dla działu zakupów (Procurement)
 
-## 📂 Źródło: Procurement_mock_dataset1 - mockowy zestaw danych, który odzwierciedla dokładną architekturę techniczną, inżynierię danych oraz logikę biznesową systemu SAP Ariba.
-Zestaw danych został wygenerowany przez skrypt mojego autorastwa - dostępny na moim Githubie pod nazwą " SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics". Zawiera 2500 rekordów. --> [SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics \](https://github.com/kamila-dudzinska/SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics)
+## 📂 Źródło: Procurement_mock_dataset1 
+Mockowy zestaw danych, który odzwierciedla dokładną architekturę techniczną, inżynierię danych oraz logikę biznesową systemu SAP Ariba. Zestaw danych został wygenerowany przez skrypt mojego autorastwa - dostępny na moim Githubie pod nazwą " SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics". Zawiera 2500 rekordów. --> [SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics \](https://github.com/kamila-dudzinska/SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics)
 
 " SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics" - Generator Danych Mockowych SAP Ariba dla Analityki Zakupowej (Procurement) 📊🧪 --> Narzędzie w Pythonie zaprojektowane do generowania syntetycznych, produkcyjnej jakości zestawów danych zamówień zakupu (Purchase Orders). Odzwierciedla ono dokładną architekturę techniczną, inżynierię danych oraz logikę biznesową systemu SAP Ariba. Ten projekt rozwiązuje kluczowy problem ekspertów ds. zakupów (Procurement), którzy chcą przejść do obszaru analizy danych: brak możliwości pracy na realnych danych korporacyjnych ze względu na surowe zasady compliance, umowy NDA oraz regulacje RODO.
 
-## 🎯Cel: Stworzenie programu do analizy tabeli excel z danymi o zamówieniach w systemie SAP ARIBA oraz automatycznego wysyłania maili do kupców z przypomnieniem o konieczności zaksięgowania przyjęcia (GR). Program generuje też raport dla administratora, do kogo maile zostały wysłane i jakie są statystyki zamówień. Dzięki temu można jednym kliknięciem zaoszczędzić sporo FTE, a administrator może szybko uzyskać realny "stan rzeczy".
+## 🎯Cel: 
+Stworzenie programu do analizy tabeli excel z danymi o zamówieniach w systemie SAP ARIBA oraz automatycznego wysyłania maili do kupców z przypomnieniem o konieczności zaksięgowania przyjęcia (GR). Program generuje też raport dla administratora, do kogo maile zostały wysłane i jakie są statystyki zamówień. Dzięki temu można jednym kliknięciem zaoszczędzić sporo FTE, a administrator może szybko uzyskać realny "stan rzeczy".
 
-## ⚙️ Technologie
+## ⚙️ Technologie:
 - Python 🐍  
 - pandas, reportlab, win32com  
 - Excel, Outlook
@@ -68,7 +68,7 @@ Statystyki z załącznika:
 
 ## 📬 Kontakt
 📧 kamila.dudzinska@onet.pl  
-🌐 [LinkedIn](ca://s?q=Otworz_profil_LinkedIn_Kamila_Dudzinska)
+🌐 [LinkedIn]([ca://s?q=Otworz_profil_LinkedIn_Kamila_Dudzinska](https://www.linkedin.com/flagship-web/in/kamila-dudzi%C5%84ska-856bb31b8/))
 
 
 
