@@ -69,9 +69,6 @@ pip install pandas reportlab pywin32
 ### 📧 Kontakt --> Kamila Dudzińska
 
 
-[LinkeInd](https://www.linkedin.com/in/kamila-dudzi%C5%84ska-856bb31b8/)
-
-
 📧 kamila.dudzinska@onet.pl  
 
 🌐 [LinkedIn](https://www.linkedin.com/flagship-web/in/kamila-dudzi%C5%84ska-856bb31b8/)
