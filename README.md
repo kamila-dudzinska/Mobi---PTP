@@ -5,7 +5,7 @@ Program automatyzuje pracę w obszarze operacyjnym działu PTP
 
 <hr style="border:1px solid #BFEFFF;">
 
-### Autor: <span style="color:#ff69b4;">  Kamila Dudzińska </span>
+### Autor:  ![Autor](https://img.shields.io/badge/Autor-Kamila%20Dudzińska-ff69b4?style=for-the-badge)
 
 ### 📊 Projekt: Program 'Mobi' do automatyzacji maili 
 Mobi jest dedykowany dla procesów operacyjnych dla działu zakupów (Indirect Procurement).
