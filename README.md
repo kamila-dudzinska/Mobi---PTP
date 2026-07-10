@@ -5,9 +5,7 @@ Program automatyzuje pracę w obszarze operacyjnym działu PTP
 
 <hr style="border:1px solid #BFEFFF;">
 
-[### [Autor:  ![Autor](https://img.shields.io/badge/Autor-Kamila%20Dudzińska-ff69b4?style=for-the-badge)](https://img.shields.io/badge/Autor-Kamila%20Dudzińska-ff69b4?style=social
-)](https://img.shields.io/badge/Autor-Kamila%20Dudzińska-ff69b4?style=social
-)
+### Autor: Kamila Dudzińska
 
 ### 📊 Projekt: Program 'Mobi' do automatyzacji maili 
 Mobi jest dedykowany dla procesów operacyjnych dla działu zakupów (Indirect Procurement).
@@ -70,7 +68,8 @@ pip install pandas reportlab pywin32
 ![Email to Admin](images/admin_email.png)
 
 <hr style="border:3px solid #AEC6CF;">
-### 📧 Kontakt --> Kamila Dudzińska
+### 📧 Kontakt --> ![Kontakt](https://img.shields.io/badge/Email-Kamila%20Dudzińska-ff69b4?style=for-the-badge&logo=gmail&logoColor=white)
+
 
 
 📧 kamila.dudzinska@onet.pl  
