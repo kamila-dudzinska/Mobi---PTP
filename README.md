@@ -7,7 +7,7 @@
 
 
 ### Autor: Kamila Dudzińska
-
+<br><br>
 
 
 ### 📊 Projekt: Program 'Mobi' do automatyzacji maili 
