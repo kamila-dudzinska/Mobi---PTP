@@ -1,6 +1,6 @@
 <div style="max-width: 760px;">
 
-# Mobi- autumatyzacja procesu 'GR missing' w obszarze PTP/AP
+# 🪄 Mobi- autumatyzacja procesu 'GR missing' w obszarze PTP/AP
 
 <hr style="border:1px solid #BFEFFF;">
 
