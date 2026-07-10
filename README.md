@@ -1,7 +1,6 @@
 <div style="max-width: 760px;">
 
-# Mobi---PTP 🚀
-Program automatyzuje pracę w obszarze operacyjnym działu PTP
+# Mobi- autumatyzacja procesu 'GR missing' w obszarze PTP/AP
 
 <hr style="border:1px solid #BFEFFF;">
 
@@ -69,7 +68,9 @@ pip install pandas reportlab pywin32
 
 <hr style="border:3px solid #AEC6CF;">
 
-### 📧  Kontakt:  [![Kamila Dudzińska](https://img.shields.io/badge/Kamila%20Dudzińska-ff69b4?style=for-the-badge)](mailto:kamila.dudzinska@onet.pl)
+### 📧  Kontakt:  
+
+[![Kamila Dudzińska](https://img.shields.io/badge/Kamila%20Dudzińska-ff69b4?style=for-the-badge)](mailto:kamila.dudzinska@onet.pl)
 [![Email](https://img.shields.io/badge/Email-555555?style=for-the-badge)](mailto:kamila.dudzinska@onet.pl)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge)](https://www.linkedin.com/flagship-web/in/kamila-dudzi%C5%84ska-856bb31b8/)
 
