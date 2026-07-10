@@ -5,7 +5,8 @@ Program automatyzuje pracę w obszarze operacyjnym działu PTP
 
 <hr style="border:1px solid #BFEFFF;">
 
-### [Autor:  ![Autor](https://img.shields.io/badge/Autor-Kamila%20Dudzińska-ff69b4?style=for-the-badge)](https://img.shields.io/badge/Autor-Kamila%20Dudzińska-ff69b4?style=social
+[### [Autor:  ![Autor](https://img.shields.io/badge/Autor-Kamila%20Dudzińska-ff69b4?style=for-the-badge)](https://img.shields.io/badge/Autor-Kamila%20Dudzińska-ff69b4?style=social
+)](https://img.shields.io/badge/Autor-Kamila%20Dudzińska-ff69b4?style=social
 )
 
 ### 📊 Projekt: Program 'Mobi' do automatyzacji maili 
