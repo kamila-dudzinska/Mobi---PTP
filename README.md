@@ -68,9 +68,9 @@ pip install pandas reportlab pywin32
 ![Email to Admin](images/admin_email.png)
 
 <hr style="border:3px solid #AEC6CF;">
-### 📧 Kontakt --> 
-![Kontakt](https://img.shields.io/badge/Email-Kamila%20Dudzińska-ff69b4?style=for-the-badge&logo=gmail&logoColor=white)
+### 📧 Kontakt: 
 
+![Autor](https://img.shields.io/badge/Created_by-Kamila%20Dudzińska-e91e63?style=flat&logo=heart&logoColor=white)
 
 
 📧 kamila.dudzinska@onet.pl  
