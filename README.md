@@ -54,21 +54,21 @@ W katalogu projektu uruchom:
 pip install pandas reportlab pywin32
 ```
 
-### Tabela z zamówieniami (na niebiesko te zamówienia, gdzie Mobi powienien wysłać przypominajkę):
+#### Tabela z zamówieniami (na niebiesko te zamówienia, gdzie Mobi powienien wysłać przypominajkę):
 ![tabelka excel](images/ordered1.py)
 
-### Fragment kodu: Czyszczenie danych
+#### Fragment kodu: Czyszczenie danych
 ![data cleaning](images/mobi1.png)
 
-### Fragment kodu: main loop
+#### Fragment kodu: Main 
 ![main](images/mobi2.png)
 
-### Email administratora:
+#### Email do administratora:
 ![Email to Admin](images/admin_email.png)
 
 <hr style="border:3px solid #AEC6CF;">
 
-### 📧  Kontakt:  
+### Kontakt:  
 
 [![Kamila Dudzińska](https://img.shields.io/badge/Kamila%20Dudzińska-ff69b4?style=for-the-badge)](mailto:kamila.dudzinska@onet.pl)
 [![Email](https://img.shields.io/badge/Email-555555?style=for-the-badge)](mailto:kamila.dudzinska@onet.pl)
