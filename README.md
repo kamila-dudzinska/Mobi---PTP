@@ -65,15 +65,15 @@ pip install pandas reportlab pywin32
 
 
 #### Fragment kodu: Czyszczenie danych
-![data cleaning](images/mobi1.png)
+![data cleaning](images/data_load_cleaning.png)
 
 
 #### Fragment kodu: Main 
-![main](images/mobi2.png)
+![main](images/mainl.png)
 
 
 #### Email do administratora:
-![Email to Admin](images/admin_email.png)
+![Email to Admin](images/email_admin.png)
 
 <hr style="border:3px solid #AEC6CF;">
 
