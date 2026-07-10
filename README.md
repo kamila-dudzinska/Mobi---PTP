@@ -6,7 +6,6 @@
 
 ### Autor: Kamila Dudzińska
 
-
 ### 📊 Projekt: Program 'Mobi' do automatyzacji maili 
 Mobi jest dedykowany dla procesów operacyjnych dla działu zakupów (Indirect Procurement).
 
