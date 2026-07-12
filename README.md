@@ -69,20 +69,18 @@ Libraries: pandas, reportlab, win32com, os, datetime
 
 ### 📦 Installation
 In the project directory run:
-
-bash
+```bash
 pip install pandas reportlab pywin32
-Purchase order table (highlighted in blue: orders where Mobi should send a reminder):
-[Wygląda na to, że wynik nie był bezpieczny do pokazania. Zmieńmy coś i spróbujmy czegoś innego!]
+```
 
 Code snippet: Data cleaning
-[Wygląda na to, że wynik nie był bezpieczny do pokazania. Zmieńmy coś i spróbujmy czegoś innego!]
+![tabelka excel](images/ordred1.png)
 
 Code snippet: Main
-[Wygląda na to, że wynik nie był bezpieczny do pokazania. Zmieńmy coś i spróbujmy czegoś innego!]
+![main](images/mainl.png)
 
 Email to administrator:
-[Wygląda na to, że wynik nie był bezpieczny do pokazania. Zmieńmy coś i spróbujmy czegoś innego!]
+![Email to Admin](images/email_admin.png)
 
 <hr style="border:3px solid #AEC6CF;">
 
