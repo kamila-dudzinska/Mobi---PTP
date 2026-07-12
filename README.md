@@ -13,6 +13,7 @@ The dataset was generated using a Python script I authored — available on my G
 → SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics
 
 SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics — a synthetic SAP Ariba dataset generator for procurement analytics 📊🧪.
+
 A Python tool designed to generate production‑quality synthetic Purchase Order datasets. It mirrors the technical architecture, data engineering, and business logic of SAP Ariba.
 This project solves a key problem for procurement experts transitioning into data analytics: the inability to work with real corporate data due to strict compliance rules, NDAs, and GDPR regulations.
 
@@ -91,7 +92,6 @@ Email to administrator:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge)](https://www.linkedin.com/flagship-web/in/kamila-dudzi%C5%84ska-856bb31b8/)
 
 
-<hr style="border:1px solid #BFEFFF;">
 
 ------------------------------------------- POLISH VERSION --------------------------------------------------
 
