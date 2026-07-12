@@ -1,13 +1,13 @@
 <div style="max-width: 760px;">
 
-🪄 Mobi – automation of the “GR missing” process in the PTP/AP area
+# 🪄 Mobi – automation of the “GR missing” process in the PTP/AP area
 <hr style="border:1px solid #BFEFFF;">
 
-Author: Kamila Dudzińska
+### Author: Kamila Dudzińska
 📊 Project: Mobi – automated email workflow
 Mobi is dedicated to operational processes within the Indirect Procurement department.
 
-📂 Source: Procurement_mock_dataset1
+### 📂 Source: Procurement_mock_dataset1
 A mock dataset reflecting the exact technical architecture, data engineering, and business logic of the SAP Ariba system.
 The dataset was generated using a Python script I authored — available on my GitHub under the name SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics. It contains 2500 records.
 → SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics
@@ -16,29 +16,30 @@ SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics — a synthetic SAP Arib
 A Python tool designed to generate production‑quality synthetic Purchase Order datasets. It mirrors the technical architecture, data engineering, and business logic of SAP Ariba.
 This project solves a key problem for procurement experts transitioning into data analytics: the inability to work with real corporate data due to strict compliance rules, NDAs, and GDPR regulations.
 
-🎯 Goal
+### 🎯 Goal
 To create a program that analyzes an Excel table with SAP Ariba purchase order data and automatically sends reminder emails to buyers about the need to post a Goods Receipt (GR).
 The program also generates an admin report summarizing who received emails and providing PO statistics.
 With one click, it saves significant FTE effort and gives administrators a real-time overview of the process.
 
-⚙️ Technologies
+### ⚙️ Technologies
 - Python 🐍  
 - pandas, reportlab, win32com  
 - Excel, Outlook
 
 
-🧩 How the program works
-The program iterates through each row in the purchase order table.
+### 🧩 How the program works
+1. The program iterates through each row in the purchase order table.
 
-* If it finds a PO with the status “ordered”, it additionally checks the forecasted delivery date.
+2. If it finds a PO with the status “ordered”, it additionally checks the forecasted delivery date.
 
-* If the delivery date is in the past (today minus 3 days*), it treats this as a task trigger → sends a reminder email to the buyer to perform the GR.
+3. If the delivery date is in the past (today minus 3 days*), it treats this as a task trigger → sends a reminder email to the buyer to perform the GR.
 
-* The program reads data from Excel; if a buyer has multiple POs, they receive one email containing details of all relevant orders.
+4. The program reads data from Excel; if a buyer has multiple POs, they receive one email containing details of all relevant orders.
 
-* After completing the task, the program informs the administrator (via IDE console) and sends a PDF report with statistics to the admin’s email.
+5. After completing the task, the program informs the administrator (via IDE console) and sends a PDF report with statistics to the admin’s email.
 
-🖥️ Project advantages
+
+### 🖥️ Project advantages
 * Addresses a real operational problem requiring repetitive checking and sending reminders/follow-ups.
 
 * Reduces issues with GR posting among non-technical buyers who often claim: “Guided Buying in Ariba doesn’t allow filtering by status.”
@@ -57,7 +58,7 @@ The program iterates through each row in the purchase order table.
 
 <hr style="border:1px solid #BFEFFF;">
 
-⚙️ Installation & Launch
+### ⚙️ Installation & Launch
 🔧 Requirements
 Python 3.10+
 
@@ -65,7 +66,7 @@ Installed Outlook (for email sending) and optionally Excel for CSV reading
 
 Libraries: pandas, reportlab, win32com, os, datetime
 
-📦 Installation
+### 📦 Installation
 In the project directory run:
 
 bash
@@ -84,7 +85,7 @@ Email to administrator:
 
 <hr style="border:3px solid #AEC6CF;">
 
-Contact:
+### Contact:
 [![Kamila Dudzińska](https://img.shields.io/badge/Kamila%20Dudzińska-ff69b4?style=for-the-badge)](mailto:kamila.dudzinska@onet.pl)
 [![Email](https://img.shields.io/badge/Email-555555?style=for-the-badge)](mailto:kamila.dudzinska@onet.pl)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge)](https://www.linkedin.com/flagship-web/in/kamila-dudzi%C5%84ska-856bb31b8/)
