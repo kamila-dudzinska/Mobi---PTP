@@ -89,9 +89,9 @@ Email to administrator:
 [![Email](https://img.shields.io/badge/Email-555555?style=for-the-badge)](mailto:kamila.dudzinska@onet.pl)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge)](https://www.linkedin.com/flagship-web/in/kamila-dudzi%C5%84ska-856bb31b8/)
 
+<br></br>
 
-
-------------------------------------------- POLISH VERSION --------------------------------------------------
+------------------------------------------------ POLISH VERSION -----------------------------------------------------
 
 # 🪄 Mobi - autumatyzacja procesu 'GR missing' w obszarze PTP/AP
 
