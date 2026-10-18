@@ -7,10 +7,10 @@
 📊 Project: Mobi – automated email workflow
 Mobi is dedicated to operational processes within the Indirect Procurement department.
 
-### 📂 Source: Procurement_mock_dataset1
+### 📂 Source: procurement_mock_2500.csv
 A mock dataset reflecting the exact technical architecture, data engineering, and business logic of the SAP Ariba system.
 The dataset was generated using a Python script I authored — available on my GitHub under the name SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics. It contains 2500 records.
-→ SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics
+→ [SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics](https://github.com/kamila-dudzinska/SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics)
 
 SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics — a synthetic SAP Ariba dataset generator for procurement analytics 📊🧪.
 
@@ -18,7 +18,7 @@ A Python tool designed to generate production‑quality synthetic Purchase Order
 This project solves a key problem for procurement experts transitioning into data analytics: the inability to work with real corporate data due to strict compliance rules, NDAs, and GDPR regulations.
 
 ### 🎯 Goal
-To create a program that analyzes an Excel table with SAP Ariba purchase order data and automatically sends reminder emails to buyers about the need to post a Goods Receipt (GR).
+To create a program that analyzes a CSV export table with SAP Ariba purchase order data and automatically sends reminder emails to buyers (requestors) about the need to post a Goods Receipt (GR).
 The program also generates an admin report summarizing who received emails and providing PO statistics.
 With one click, it saves significant FTE effort and gives administrators a real-time overview of the process.
 
@@ -33,7 +33,7 @@ With one click, it saves significant FTE effort and gives administrators a real-
 
 2. It finds POs in status "ordered" with a delivery date older than 3 days → GR missing.
 
-3. If the delivery date is in the past (today minus 3 days*), it treats this as a task trigger → sends a reminder email to the buyer to perform the GR --> ONE email with an HTML table of all their POs (PO, supplier, delivery date, amount + currency).
+3. The requestor (buyer) will get --> ONE email with an HTML table of all their POs (PO, supplier, delivery date, amount + currency).
 
 4. The administrator gets a PDF report with statistics.
 
@@ -44,7 +44,7 @@ With one click, it saves significant FTE effort and gives administrators a real-
 
 * KPI: PO numbers, requestors reminded, PO without GR, emails created
   
-*- PO status – all statuses
+* PO status – all statuses
 
 * GR missing – aging (days after delivery date)
   
@@ -74,7 +74,7 @@ With one click, it saves significant FTE effort and gives administrators a real-
 <hr style="border:1px solid #BFEFFF;">
 
 
-### Nest Step?
+### 🚀 Nest Step?
 
 Connect to API: convert blocked value to EUR – overdue invoices and countr the currency risk, not only late payment. Te currency changes in time, sometimes the overdue bills cost more than only dunning letter fee. The report will be showing the new column with information about 'loss' or 'win' basing on actual currency rate.
 
@@ -83,9 +83,9 @@ Connect to API: convert blocked value to EUR – overdue invoices and countr the
 🔧 Requirements
 Python 3.10+
 
-Installed Outlook (for email sending) and optionally Excel for CSV reading
+Installed Outlook (for email sending).
 
-Libraries: pandas, reportlab, win32com, 
+Libraries: pandas, reportlab, win32com
 
 
 ### 📦 Installation
