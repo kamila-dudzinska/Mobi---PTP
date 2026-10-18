@@ -29,15 +29,29 @@ With one click, it saves significant FTE effort and gives administrators a real-
 
 
 ### 🧩 How the program works
-1. The program iterates through each row in the purchase order table.
+1. Mobi reads PO data from a CSV export (SAP Ariba mock data).
 
-2. If it finds a PO with the status “ordered”, it additionally checks the forecasted delivery date.
+2. It finds POs in status "ordered" with a delivery date older than 3 days → GR missing.
 
-3. If the delivery date is in the past (today minus 3 days*), it treats this as a task trigger → sends a reminder email to the buyer to perform the GR.
+3. If the delivery date is in the past (today minus 3 days*), it treats this as a task trigger → sends a reminder email to the buyer to perform the GR --> ONE email with an HTML table of all their POs (PO, supplier, delivery date, amount + currency).
 
-4. The program reads data from Excel; if a buyer has multiple POs, they receive one email containing details of all relevant orders.
+4. The administrator gets a PDF report with statistics.
 
-5. After completing the task, the program informs the administrator (via IDE console) and sends a PDF report with statistics to the admin’s email.
+5. Safe test mode: DRY_RUN = True opens only 3 email previews, nothing is sent.
+
+
+### 📊 PO Report contains:
+
+* KPI: PO numbers, requestors reminded, PO without GR, emails created
+  
+*- PO status – all statuses
+
+* GR missing – aging (days after delivery date)
+  
+* GR missing – blocked value per currency
+  
+* requestors_with_max_missings – top 5 requestors with the highest number of POs without GR
+
 
 
 ### 🖥️ Project advantages
@@ -59,18 +73,27 @@ With one click, it saves significant FTE effort and gives administrators a real-
 
 <hr style="border:1px solid #BFEFFF;">
 
+
+### Nest Step?
+
+Connect to API: convert blocked value to EUR – overdue invoices and countr the currency risk, not only late payment. Te currency changes in time, sometimes the overdue bills cost more than only dunning letter fee. The report will be showing the new column with information about 'loss' or 'win' basing on actual currency rate.
+
+
 ### ⚙️ Installation & Launch
 🔧 Requirements
 Python 3.10+
 
 Installed Outlook (for email sending) and optionally Excel for CSV reading
 
-Libraries: pandas, reportlab, win32com, os, datetime
+Libraries: pandas, reportlab, win32com, 
+
 
 ### 📦 Installation
-In the project directory run:
 ```bash
-pip install pandas reportlab pywin32
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python mobi.py
 ```
 
 Code snippet: Data cleaning
