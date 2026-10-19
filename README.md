@@ -25,7 +25,7 @@ With one click, it saves significant FTE effort and gives administrators a real-
 ### ⚙️ Technologies
 - Python 🐍  
 - pandas, reportlab, win32com  
-- Excel, Outlook
+- Excel (optional for csv reading*), Outlook
 
 
 ### 🧩 How the program works
@@ -74,7 +74,7 @@ With one click, it saves significant FTE effort and gives administrators a real-
 <hr style="border:1px solid #BFEFFF;">
 
 
-### 🚀 Nest Step?
+### 🚀 What will be next?
 
 Connect to API: convert blocked value to EUR – overdue invoices and countr the currency risk, not only late payment. Te currency changes in time, sometimes the overdue bills cost more than only dunning letter fee. The report will be showing the new column with information about 'loss' or 'win' basing on actual currency rate.
 
@@ -100,10 +100,16 @@ Code snippet: Data cleaning
 ![tabelka excel](images/ordred1.png)
 
 Code snippet: Main
-![main](images/mainl.png)
+![main](images/mobi1.png)
+
+Email to administrator preparation mainl:
+![Email to Admin](images/admin_email.png)
 
 Email to administrator:
 ![Email to Admin](images/admin_email.png)
+
+Report - visual metrics:
+![Email to Admin](images/report_admin.png)
 
 <hr style="border:3px solid #AEC6CF;">
 
