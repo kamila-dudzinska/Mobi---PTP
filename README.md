@@ -103,7 +103,7 @@ Code snippet: Main
 ![main](images/mainl.png)
 
 Email to administrator:
-![Email to Admin](images/email_admin.png)
+![Email to Admin](images/admin_email.png)
 
 <hr style="border:3px solid #AEC6CF;">
 
@@ -189,7 +189,7 @@ pip install pandas reportlab pywin32
 
 
 #### Email do administratora:
-![Email to Admin](images/email_admin.png)
+![Email to Admin](images/admin_email.png)
 
 <hr style="border:3px solid #AEC6CF;">
 
