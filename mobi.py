@@ -5,7 +5,7 @@ Extended on Sun Oct 18 18:15:20 2026
 
 @author: Kamila Dudzińska
 
-The program processes an Excel file and checks the status of each purchase 
+The program processes an csv file and checks the status of each purchase 
 order (PO). If the PO status is marked as "Ordered" but the delivery date 
 is in the past, the program automatically sends an email notification to the 
 responsible user, requesting clarification with the buyer or requester 
@@ -22,7 +22,7 @@ to the administrator, including a PDF report as an attachment. By automating
 email notifications to buyers and requesters, the solution addresses a real 
 business issue commonly encountered in large Shared Service Centers (SSCs).
 
-The program operates on the file procurement_dataset1.csv, which was generated 
+The program operates on the file procurement_mock_2500.csv, which was generated 
 using a Python script developed by me. The script creates realistic mock 
 procurement datasets while preserving the data structure and business logic 
 typically found in SAP Ariba procurement environments.
@@ -155,7 +155,7 @@ for (email, name), pos in buyers:
         if DRY_RUN:
             mail.Display()   # only preview
         else:
-            mail.Send()      # uncomment if mail should not be sent!
+            mail.Send()      # Send() will send email to buyer.
         emails_sent += 1
         print(f"Email created for {email} ({len(pos)} PO)")
     else:
