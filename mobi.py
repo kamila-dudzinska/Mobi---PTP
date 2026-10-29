@@ -39,10 +39,11 @@ payment workflow while reducing administrative effort.
 import os
 from datetime import datetime, timedelta
 import pandas as pd
-import reportlab
 from reportlab.lib.pagesizes import A4
 from reportlab.lib import colors
 from reportlab.pdfgen import canvas
+from reportlab.pdfbase import pdfmetrics            # fonts
+from reportlab.pdfbase.ttfonts import TTFont         # fonts TrueType (.ttf)
 from mobi_function import divide_z
 
 try:
@@ -150,13 +151,41 @@ for (email, name), pos in buyers:
         mail.To = email
         mail.Subject = subject
         mail.HTMLBody = body
-        mail.Display()   # Display = preview only; change to Send() to send
+        # DRY_RUN = False -> send email (no preview)
+        if DRY_RUN:
+            mail.Display()   # only preview
+        else:
+            mail.Send()      # uncomment if mail should not be sent!
         emails_sent += 1
         print(f"Email created for {email} ({len(pos)} PO)")
     else:
         print(f"[dry run] {email}: {len(pos)} PO")
 
 print(f"Buyers to remind: {buyers.ngroups}, PO without GR: {po_missing_gr}")
+
+# Fonts with Polish special signs 'ą, ę, ć, ł...'
+# - Windows: Calibri & Linux: Carlito 
+FONT_CANDIDATES = [
+    ("C:/Windows/Fonts/calibri.ttf", "C:/Windows/Fonts/calibrib.ttf", "C:/Windows/Fonts/calibrii.ttf"),
+    ("/usr/share/fonts/truetype/crosextra/Carlito-Regular.ttf",
+     "/usr/share/fonts/truetype/crosextra/Carlito-Bold.ttf",
+     "/usr/share/fonts/truetype/crosextra/Carlito-Italic.ttf"),
+]
+
+def register_fonts():
+    """Zwraca nazwy czcionek: (zwykła, pogrubiona, kursywa)."""
+    for regular, bold, italic in FONT_CANDIDATES:
+        # bierzemy zestaw tylko wtedy, gdy wszystkie 3 pliki istnieją
+        if all(os.path.exists(f) for f in (regular, bold, italic)):
+            pdfmetrics.registerFont(TTFont("Mobi", regular))
+            pdfmetrics.registerFont(TTFont("Mobi-Bold", bold))
+            pdfmetrics.registerFont(TTFont("Mobi-Italic", italic))
+            return "Mobi", "Mobi-Bold", "Mobi-Italic"
+    # brak czcionki TTF -> standardowa Helvetica (bez polskich znaków)
+    return "Helvetica", "Helvetica-Bold", "Helvetica-Oblique"
+
+FONT, FONT_BOLD, FONT_ITALIC = register_fonts()
+
 
 # ADMIN PART - PDF REPORT VII
 c = canvas.Canvas(PDF_FILE, pagesize=A4)
@@ -169,9 +198,9 @@ GREY = colors.HexColor("#6B7280")
 c.setFillColor(NAVY)
 c.rect(0, height - 90, width, 90, stroke=0, fill=1)
 c.setFillColor(colors.white)
-c.setFont("Helvetica-Bold", 22)
+c.setFont(FONT_BOLD, 22)
 c.drawString(50, height - 50, "Mobi - GR Missing Report")
-c.setFont("Helvetica", 11)
+c.setFont(FONT, 11)
 c.drawString(50, height - 72, f"Generated: {today:%Y-%m-%d %H:%M}")
 
 # KPI tiles
@@ -186,15 +215,15 @@ for i, (label, value) in enumerate(tiles):
     c.setFillColor(BLUE)
     c.roundRect(x, y_tiles, tile_w, tile_h, 8, stroke=0, fill=1)
     c.setFillColor(NAVY)
-    c.setFont("Helvetica-Bold", 22)
+    c.setFont(FONT_BOLD, 22)
     c.drawCentredString(x + tile_w / 2, y_tiles + 32, f"{value:,}")
-    c.setFont("Helvetica", 9)
+    c.setFont(FONT, 9)
     c.setFillColor(GREY)
     c.drawCentredString(x + tile_w / 2, y_tiles + 14, label)
 
 def draw_bar(y, label, count, share, bar_max=260):
     """One row: label, grey background bar, navy bar for the share, number."""
-    c.setFont("Helvetica", 10)
+    c.setFont(FONT, 10)
     c.setFillColor(colors.black)
     c.drawString(50, y + 3, label)
     c.setFillColor(colors.HexColor("#E5E7EB"))
@@ -207,7 +236,7 @@ def draw_bar(y, label, count, share, bar_max=260):
 
 def section_title(y, title):
     c.setFillColor(NAVY)
-    c.setFont("Helvetica-Bold", 13)
+    c.setFont(FONT_BOLD, 13)
     c.drawString(50, y, title)
     c.setStrokeColor(BLUE)
     c.setLineWidth(2)
@@ -223,7 +252,7 @@ for status, count in status_counts.items():
     draw_bar(y, status.capitalize(), count, divide_z(int(count), total_po) * 100)
 
 # 2. GR missing - aging
-y -= 40
+y -= 34
 section_title(y, "GR missing - days after delivery date")
 y -= 12
 for bucket, count in aging_counts.items():
@@ -231,18 +260,18 @@ for bucket, count in aging_counts.items():
     draw_bar(y, bucket, count, divide_z(int(count), po_missing_gr) * 100)
 
 # 3. GR missing - value per currency
-y -= 40
+y -= 34
 section_title(y, "GR missing - blocked value per currency")
 y -= 12
 for currency, amount in missing_value.items():
     y -= 20
-    c.setFont("Helvetica", 10)
+    c.setFont(FONT, 10)
     c.setFillColor(colors.black)
     c.drawString(50, y, currency)
     c.drawRightString(260, y, f"{amount:,.0f}")
 
 # 4. requestors with max missings
-y -= 40
+y -= 34
 section_title(y, "Requestors with max missings (PO without GR)")
 y -= 12
 for rank, (name, count) in enumerate(requestors_with_max_missings.items(), start=1):
@@ -250,10 +279,10 @@ for rank, (name, count) in enumerate(requestors_with_max_missings.items(), start
     draw_bar(y, f"{rank}. {name}", count, divide_z(int(count), po_missing_gr) * 100)
 
 # footer
-c.setFont("Helvetica-Oblique", 9)
+c.setFont(FONT_ITALIC, 9)
 c.setFillColor(GREY)
 c.drawString(50, 40, f"Rule: status 'ordered' and delivery date older than {GR_BUFFER_DAYS} days.")
-c.drawString(50, 28, "Source: SAP Ariba mock data | Mobi by Kamila Dudzinska")
+c.drawString(50, 28, "Source: SAP Ariba mock data | Mobi by Kamila Dudzińska")   # [ZMIANA 2] teraz można "ń"
 c.save()
 print("PDF saved:", PDF_FILE)
 
