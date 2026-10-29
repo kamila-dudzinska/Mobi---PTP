@@ -39,6 +39,8 @@ With one click, it saves significant FTE effort and gives administrators a real-
 
 5. Safe test mode: DRY_RUN = True opens only 3 email previews, nothing is sent.
 
+6. Real sending mode: DRY_RUN = False sends reminder emails directly to buyers – no extra clicks, no windows to close 
+
 
 ### 📊 PO Report contains:
 
@@ -76,7 +78,7 @@ With one click, it saves significant FTE effort and gives administrators a real-
 
 ### 🚀 What will be next?
 
-Connect to API: convert blocked value to EUR – overdue invoices and countr the currency risk, not only late payment. Te currency changes in time, sometimes the overdue bills cost more than only dunning letter fee. The report will be showing the new column with information about 'loss' or 'win' basing on actual currency rate.
+Connect to API: convert blocked value to EUR – overdue invoices and country the currency risk, not only late payment. Te currency changes in time, sometimes the overdue bills cost more than only dunning letter fee. The report will be showing the new column with information about 'loss' or 'win' basing on actual currency rate.
 
 
 ### ⚙️ Installation & Launch
@@ -105,8 +107,8 @@ Code snippet: Data Cleaning
 Code snippet: Main
 ![main](images/mobi1.png)
 
-Email to administrator preparation mainl:
-![Email to Admin](images/admin_email.png)
+Email to administrator preparation code:
+![Email to Admin](images/mainl.png)
 
 Email to administrator:
 ![Email to Admin](images/admin_email.png)
@@ -125,7 +127,7 @@ Report - visual metrics:
 
 ------------------------------------------------ POLISH VERSION -----------------------------------------------------
 
-# 🪄 Mobi - autumatyzacja procesu 'GR missing' w obszarze PTP/AP
+# 🪄 Mobi - automatyzacja procesu 'GR missing' w obszarze PTP/AP
 
 <hr style="border:1px solid #BFEFFF;">
 
@@ -133,7 +135,7 @@ Report - visual metrics:
 
 ### 📊 Projekt: Mobi – automatyzacja maili z przypomnieniami Mobi jest dedykowany procesom operacyjnym w dziale zakupów (Indirect Procurement).
 
-### 📂 Źródło: Procurement_mock_dataset1 
+### 📂 Źródło: procurement_mock_2500.csv
 Mockowy zestaw danych, który odzwierciedla architekturę techniczną, inżynierię danych oraz logikę biznesową systemu SAP Ariba. Zestaw danych został wygenerowany przez skrypt mojego autorstwa – dostępny na moim GitHubie pod nazwą „SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics”. Zawiera 2500 rekordów. → SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics
 
 SAP-Ariba-Mock-Data-Generator-for-Procurement-Analytics – generator danych mockowych SAP Ariba dla analityki zakupowej 
@@ -163,6 +165,8 @@ Stworzenie programu, który analizuje eksport CSV z danymi o zamówieniach z SAP
 
 5. Bezpieczny tryb testowy: DRY_RUN = True otwiera tylko 3 podglądy maili, nic nie zostaje wysłane.
 
+6. DRY_RUN = False wysyła przypominajki prosto do kupców, bez dodatkowego klikania i zamykania okien.
+
 
 ### 📊 Raport PO zawiera:
 
@@ -179,7 +183,7 @@ Stworzenie programu, który analizuje eksport CSV z danymi o zamówieniach z SAP
 
 ### 🖥️ Zalety projektu:
 
-*Odpowiada na realny problem operacyjny, w którym trzeba ciągle sprawdzać zamówienia i wysyłać przypominajki/follow-upy.
+* Odpowiada na realny problem operacyjny, w którym trzeba ciągle sprawdzać zamówienia i wysyłać przypominajki/follow-upy.
 
 * Zmniejsza problem z księgowaniem GR przez nietechnicznych kupców, którzy często tłumaczą się: „W Aribie Guided Buying nie da się filtrować po statusach”.
 
@@ -197,10 +201,13 @@ Stworzenie programu, który analizuje eksport CSV z danymi o zamówieniach z SAP
 
 <hr style="border:1px solid #BFEFFF;">
 
-###🚀 Co dalej?
+### 🚀 Co dalej?
+
 Połączenie z API kursów walut: przeliczenie zablokowanej wartości na EUR. Faktury po terminie to nie tylko opóźniona płatność, ale też ryzyko walutowe – kurs zmienia się w czasie i czasem zaległy rachunek kosztuje więcej niż sama opłata za monit. Raport pokaże nową kolumnę z informacją o „stracie” lub „zysku” na podstawie aktualnego kursu.
 
+
 ### ⚙️ Instalacja i uruchomienie
+
 #### 🔧 Wymagania
 - Python 3.10+  
 - Zainstalowany Outlook (dla wysyłki maili) oraz opcjonalnie Excel do odczytu csv
@@ -209,13 +216,14 @@ Połączenie z API kursów walut: przeliczenie zablokowanej wartości na EUR. Fa
 
 #### 📦 Instalacja
 W katalogu projektu uruchom:
-```python -m venv .venv
-   .venv\Scripts\activate
+```
+    python -m venv .venv
+    .venv\Scripts\activate
     pip install -r requirements.txt
     python mobi.py
 ```
 
-#### Tabela z zamówieniami (na niebiesko te zamówienia, gdzie Mobi powienien wysłać przypominajkę):
+#### Tabela z zamówieniami (na niebiesko te zamówienia, gdzie Mobi powinien wysłać przypominajkę):
 ![tabelka excel](images/ordred1.png)
 
 
